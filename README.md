@@ -1,23 +1,23 @@
 # Installation
 
-> npm i parse-server-simple-nodemailer-adapter
+> npm i parse-server-simple-nodemailer-adapter -S
 
 # Usage
 
 Configuartion in parse-server:
 
 ```
-    verifyUserEmails: true,
-    publicServerURL: `http://${SERVER_HOST}:${SERVER_PORT}/parse`, 
-    appName: 'MyAppName',
-    emailAdapter: {
-      module: 'parse-server-simple-nodemailer-adapter',
-      options: {
-        fromAddress: 'no-reply@email.com',
-        user: 'youremail@gmail.com',        
-        password: 'yourpassword'
-      }      
+  verifyUserEmails: true,
+  publicServerURL: `http://${SERVER_HOST}:${SERVER_PORT}/parse`, 
+  appName: 'MyAppName',
+  emailAdapter: {
+    module: 'parse-server-simple-nodemailer-adapter',
+    options: {
+      fromAddress: 'no-reply@email.com',
+      user: 'youremail@gmail.com',        
+      password: 'yourpassword'
     }      
+  }      
 ```
 
 ----------
