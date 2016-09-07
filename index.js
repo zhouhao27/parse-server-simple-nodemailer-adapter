@@ -22,7 +22,7 @@ var SimpleNodemailerAdapter = nodemailerOptions => {
     });
 
     var message = {
-      to: nodemailerOptions.recevierName' <' + mail.to + '>',
+      to: nodemailerOptions.receiverName' <' + mail.to + '>',
       subject: mail.subject,      
       text: mail.text
     };
