@@ -18,11 +18,11 @@ var SimpleNodemailerAdapter = nodemailerOptions => {
       logger: true, // log to console
       debug: true // include SMTP traffic in the logs
     }, {
-        from: 'Sender Name <' + nodemailerOptions.fromAddress + '>',
+        from: nodemailerOptions.senderName + ' <' + nodemailerOptions.fromAddress + '>',
     });
 
     var message = {
-      to: '"Receiver Name" <' + mail.to + '>',
+      to: nodemailerOptions.receiverName' <' + mail.to + '>',
       subject: mail.subject,      
       text: mail.text
     };
