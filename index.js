@@ -15,13 +15,14 @@ var SimpleNodemailerAdapter = nodemailerOptions => {
           user: nodemailerOptions.user,
           pass: nodemailerOptions.password
       },
-      logger: true, // log to console
-      debug: true // include SMTP traffic in the logs
+      logger: false, // log to console
+      debug: false // include SMTP traffic in the logs
     }, {
         from: nodemailerOptions.senderName + ' <' + nodemailerOptions.fromAddress + '>',
     });
 
     var message = {
+      from: mail.from,
       to: mail.receiverName + ' <' + mail.to + '>',
       subject: mail.subject,      
       text: mail.text
