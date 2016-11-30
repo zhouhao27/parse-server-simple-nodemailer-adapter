@@ -23,7 +23,8 @@ var SimpleNodemailerAdapter = nodemailerOptions => {
 
     var message = {
       from: mail.from,
-      to: mail.receiverName + ' <' + mail.to + '>',
+      //to: mail.receiverName + ' <' + mail.to + '>',
+      to: mail.to,
       subject: mail.subject,      
       text: mail.text
     };
